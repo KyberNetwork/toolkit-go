@@ -14,4 +14,6 @@ type Config struct {
 	Separator        string        `mapstructure:"separator" json:"separator"`
 	ReadTimeout      time.Duration `mapstructure:"read_timeout" json:"readTimeout"`
 	WriteTimeout     time.Duration `mapstructure:"write_timeout" json:"writeTimeout"`
+	RouteRandomly    bool          `mapstructure:"route_randomly" json:"routeRandomly"`
+	ReplicaOnly      bool          `mapstructure:"replica_only" json:"replicaOnly"`
 }
